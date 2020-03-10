@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_fragment_tiga.*
 
 /**
  * A simple [Fragment] subclass.
@@ -20,5 +21,13 @@ class FragmentTiga : Fragment() {
         return inflater.inflate(R.layout.fragment_fragment_tiga, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        val hasilTangkap = arguments?.getString("args")
+
+        textHasil.text = hasilTangkap
+    }
 }
+
+

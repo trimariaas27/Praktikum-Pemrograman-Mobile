@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_fragment_satu.*
 
 /**
  * A simple [Fragment] subclass.
@@ -27,7 +28,7 @@ class FragmentSatu : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        nav = Navigation.findNavController(View)
+        nav = Navigation.findNavController(view)
 
         buttonEnter.setOnClickListener {
             nav.navigate(R.id.action_fragmentSatu_to_fragmentDua)
@@ -35,5 +36,3 @@ class FragmentSatu : Fragment() {
     }
 }
 
-
-}

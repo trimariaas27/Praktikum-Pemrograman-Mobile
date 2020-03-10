@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonEnter"
         android:layout_width="158dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
